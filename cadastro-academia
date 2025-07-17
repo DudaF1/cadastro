@@ -1,12 +1,19 @@
 #Cadastro Academia
 
-print("Academia START STRONG! Vamos iniciar seu cadastro!")
-nome = input("\nDigite seu nome completo: ")
-cpf = int(input("Digite seu CPF: "))
-idade = input("Digite sua idade: ")
-peso = input("Digite seu peso (kg): ")
-altura = input("Digite sua altura (m): ")
-objetivo = input("Qual o objetivo do seu treino? ")
+while True:
+  print("\nAcademia START STRONG! Vamos iniciar seu cadastro!")
+  nome = input("\nDigite seu nome completo: ")
+  cpf = (input("Digite seu CPF: "))
+  idade = input("Digite sua idade: ")
+  peso = input("Digite seu peso (kg): ")
+  altura = input("Digite sua altura (m): ")
+  objetivo = input("Qual o objetivo do seu treino? ")
 
-print("\nBoas vindas,", nome, "! Aqui está sua ficha de cadastro:\nFICHA DE CADASTRO:")
-print("Nome:",nome, "\nCPF:", cpf, "\nIdade:", idade, "\nPeso (kg):", peso, "\nAltura (m):", altura, "\nObjetivo do treino:", objetivo)
+  print("\nBoas vindas,", nome, "! Aqui está sua ficha de cadastro:\nFICHA DE CADASTRO:")
+  print("Nome:",nome, "\nCPF:", cpf, "\nIdade:", idade, "\nPeso (kg):", peso, "\nAltura (m):", altura, "\nObjetivo do treino:", objetivo)
+
+  continuar = input('\nDeseja realizar um novo cadastro? Se sim, digite "1" para realizá-lo. Caso o contrário, digite qualquer número para sair: ')
+  if continuar != "1":
+    break
+
+print("\nCadastro finalizado! Obrigado")
