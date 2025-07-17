@@ -1,0 +1,12 @@
+#Cadastro Academia
+
+print("Academia START STRONG! Vamos iniciar seu cadastro!")
+nome = input("\nDigite seu nome completo: ")
+cpf = int(input("Digite seu CPF: "))
+idade = input("Digite sua idade: ")
+peso = input("Digite seu peso (kg): ")
+altura = input("Digite sua altura (m): ")
+objetivo = input("Qual o objetivo do seu treino? ")
+
+print("\nBoas vindas,", nome, "! Aqui está sua ficha de cadastro:\nFICHA DE CADASTRO:")
+print("Nome:",nome, "\nCPF:", cpf, "\nIdade:", idade, "\nPeso (kg):", peso, "\nAltura (m):", altura, "\nObjetivo do treino:", objetivo)
